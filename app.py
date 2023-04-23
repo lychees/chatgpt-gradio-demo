@@ -137,5 +137,5 @@ with gr.Blocks(css=css) as demo:
 demo.queue(concurrency_count=10)
 # demo.launch(height='800px')
 CUSTOM_PATH = os.getenv('CUSTOM_PATH')
-demo = FastAPI()
-demo = gr.mount_gradio_app(demo, block, path=CUSTOM_PATH)
+app = FastAPI()
+app = gr.mount_gradio_app(demo, block, path=CUSTOM_PATH)
