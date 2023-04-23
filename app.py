@@ -3,6 +3,7 @@ import openai
 import requests
 import csv
 import os
+from fastapi import FastAPI
 
 
 prompt_templates = {"Default ChatGPT": ""}
