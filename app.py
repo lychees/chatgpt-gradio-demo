@@ -2,6 +2,7 @@ import gradio as gr
 import openai
 import requests
 import csv
+import os
 
 
 prompt_templates = {"Default ChatGPT": ""}
