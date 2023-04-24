@@ -1,4 +1,2 @@
 openai
 gradio
-requests
-csv
