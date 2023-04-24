@@ -133,10 +133,10 @@ with gr.Blocks(css=css) as demo:
     user_token.change(on_token_change, inputs=[user_token], outputs=[])
 
     
-    demo.load(download_prompt_templates, inputs=None, outputs=[prompt_template], queur=False)
+    demo.load(download_prompt_templates, inputs=None, outputs=[prompt_template], queue=False)
 
 
-demo.queue(concurrency_count=10)
+# demo.queue(concurrency_count=10)
 # demo.launch(height='800px')
 CUSTOM_PATH = os.getenv('CUSTOM_PATH')
 app = FastAPI()
