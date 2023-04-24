@@ -1,2 +1,4 @@
 openai
 gradio
+requests
+csv
